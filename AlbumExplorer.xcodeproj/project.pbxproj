@@ -14,6 +14,7 @@
 		E66A19982D7DDF500003AE8D /* AlbumExplorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E66A19962D7DDF500003AE8D /* AlbumExplorer.xcdatamodeld */; };
 		E66A199A2D7DDF530003AE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66A19992D7DDF530003AE8D /* Assets.xcassets */; };
 		E66A199D2D7DDF530003AE8D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E66A199C2D7DDF530003AE8D /* Base */; };
+		E66A19A72D7DE5080003AE8D /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E66A19A62D7DE5080003AE8D /* CombineCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66A19A72D7DE5080003AE8D /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +46,7 @@
 			children = (
 				E66A198C2D7DDF500003AE8D /* AlbumExplorer */,
 				E66A198B2D7DDF500003AE8D /* Products */,
+				E66A19A82D7DE5680003AE8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +73,13 @@
 			path = AlbumExplorer;
 			sourceTree = "<group>";
 		};
+		E66A19A82D7DE5680003AE8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +96,9 @@
 			dependencies = (
 			);
 			name = AlbumExplorer;
+			packageProductDependencies = (
+				E66A19A62D7DE5080003AE8D /* CombineCocoa */,
+			);
 			productName = AlbumExplorer;
 			productReference = E66A198A2D7DDF500003AE8D /* AlbumExplorer.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +127,10 @@
 				Base,
 			);
 			mainGroup = E66A19812D7DDF4F0003AE8D;
+			packageReferences = (
+				E66A19A42D7DE4470003AE8D /* XCRemoteSwiftPackageReference "Moya" */,
+				E66A19A52D7DE5080003AE8D /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
 			productRefGroup = E66A198B2D7DDF500003AE8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +382,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E66A19A42D7DE4470003AE8D /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		E66A19A52D7DE5080003AE8D /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E66A19A62D7DE5080003AE8D /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E66A19A52D7DE5080003AE8D /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E66A19962D7DDF500003AE8D /* AlbumExplorer.xcdatamodeld */ = {
