@@ -9,6 +9,7 @@ import UIKit
 
 class AlbumCell: UITableViewCell {
 
+    @IBOutlet weak var albumName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

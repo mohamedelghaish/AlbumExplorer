@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E659BE332D7DF359007232A2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E659BE322D7DF359007232A2 /* Moya */; };
+		E659BE362D7E49E3007232A2 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659BE342D7E49E3007232A2 /* AlbumCell.swift */; };
+		E659BE372D7E49E3007232A2 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E659BE352D7E49E3007232A2 /* AlbumCell.xib */; };
+		E659BE3A2D7E5626007232A2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659BE392D7E5625007232A2 /* Extensions.swift */; };
 		E66A198E2D7DDF500003AE8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A198D2D7DDF500003AE8D /* AppDelegate.swift */; };
 		E66A19902D7DDF500003AE8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A198F2D7DDF500003AE8D /* SceneDelegate.swift */; };
 		E66A19922D7DDF500003AE8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A19912D7DDF500003AE8D /* ViewController.swift */; };
@@ -15,9 +19,16 @@
 		E66A199A2D7DDF530003AE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66A19992D7DDF530003AE8D /* Assets.xcassets */; };
 		E66A199D2D7DDF530003AE8D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E66A199C2D7DDF530003AE8D /* Base */; };
 		E66A19A72D7DE5080003AE8D /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E66A19A62D7DE5080003AE8D /* CombineCocoa */; };
+		E66A19AC2D7DE6950003AE8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A19AB2D7DE6950003AE8D /* NetworkManager.swift */; };
+		E66A19B32D7DE85E0003AE8D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A19B22D7DE85E0003AE8D /* ProfileViewController.swift */; };
+		E66A19B52D7DE8AE0003AE8D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A19B42D7DE8AE0003AE8D /* ProfileViewModel.swift */; };
+		E66A19B72D7DE91D0003AE8D /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A19B62D7DE91D0003AE8D /* ProfileModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E659BE342D7E49E3007232A2 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		E659BE352D7E49E3007232A2 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
+		E659BE392D7E5625007232A2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E66A198A2D7DDF500003AE8D /* AlbumExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66A198D2D7DDF500003AE8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E66A198F2D7DDF500003AE8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +38,10 @@
 		E66A19992D7DDF530003AE8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66A199C2D7DDF530003AE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E66A199E2D7DDF530003AE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E66A19AB2D7DE6950003AE8D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E66A19B22D7DE85E0003AE8D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E66A19B42D7DE8AE0003AE8D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E66A19B62D7DE91D0003AE8D /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E659BE332D7DF359007232A2 /* Moya in Frameworks */,
 				E66A19A72D7DE5080003AE8D /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E659BE382D7E560D007232A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E659BE392D7E5625007232A2 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E66A19812D7DDF4F0003AE8D = {
 			isa = PBXGroup;
 			children = (
@@ -61,10 +85,12 @@
 		E66A198C2D7DDF500003AE8D /* AlbumExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				E659BE382D7E560D007232A2 /* Extension */,
+				E66A19AD2D7DE7CA0003AE8D /* Screens */,
+				E66A19A92D7DE6680003AE8D /* Servece */,
 				E66A198D2D7DDF500003AE8D /* AppDelegate.swift */,
 				E66A198F2D7DDF500003AE8D /* SceneDelegate.swift */,
 				E66A19912D7DDF500003AE8D /* ViewController.swift */,
-				E66A19932D7DDF500003AE8D /* Main.storyboard */,
 				E66A19992D7DDF530003AE8D /* Assets.xcassets */,
 				E66A199B2D7DDF530003AE8D /* LaunchScreen.storyboard */,
 				E66A199E2D7DDF530003AE8D /* Info.plist */,
@@ -78,6 +104,67 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E66A19A92D7DE6680003AE8D /* Servece */ = {
+			isa = PBXGroup;
+			children = (
+				E66A19AA2D7DE6760003AE8D /* Network */,
+			);
+			path = Servece;
+			sourceTree = "<group>";
+		};
+		E66A19AA2D7DE6760003AE8D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E66A19AB2D7DE6950003AE8D /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E66A19AD2D7DE7CA0003AE8D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E66A19AE2D7DE7D80003AE8D /* Profile */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E66A19AE2D7DE7D80003AE8D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E66A19B12D7DE8230003AE8D /* Model */,
+				E66A19B02D7DE8110003AE8D /* ViewModel */,
+				E66A19AF2D7DE8020003AE8D /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E66A19AF2D7DE8020003AE8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E66A19932D7DDF500003AE8D /* Main.storyboard */,
+				E66A19B22D7DE85E0003AE8D /* ProfileViewController.swift */,
+				E659BE342D7E49E3007232A2 /* AlbumCell.swift */,
+				E659BE352D7E49E3007232A2 /* AlbumCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E66A19B02D7DE8110003AE8D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E66A19B42D7DE8AE0003AE8D /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E66A19B12D7DE8230003AE8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E66A19B62D7DE91D0003AE8D /* ProfileModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +185,7 @@
 			name = AlbumExplorer;
 			packageProductDependencies = (
 				E66A19A62D7DE5080003AE8D /* CombineCocoa */,
+				E659BE322D7DF359007232A2 /* Moya */,
 			);
 			productName = AlbumExplorer;
 			productReference = E66A198A2D7DDF500003AE8D /* AlbumExplorer.app */;
@@ -128,8 +216,8 @@
 			);
 			mainGroup = E66A19812D7DDF4F0003AE8D;
 			packageReferences = (
-				E66A19A42D7DE4470003AE8D /* XCRemoteSwiftPackageReference "Moya" */,
 				E66A19A52D7DE5080003AE8D /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				E659BE312D7DF335007232A2 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = E66A198B2D7DDF500003AE8D /* Products */;
 			projectDirPath = "";
@@ -148,6 +236,7 @@
 				E66A199A2D7DDF530003AE8D /* Assets.xcassets in Resources */,
 				E66A199D2D7DDF530003AE8D /* Base in Resources */,
 				E66A19952D7DDF500003AE8D /* Base in Resources */,
+				E659BE372D7E49E3007232A2 /* AlbumCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +247,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66A19B32D7DE85E0003AE8D /* ProfileViewController.swift in Sources */,
 				E66A19982D7DDF500003AE8D /* AlbumExplorer.xcdatamodeld in Sources */,
 				E66A19922D7DDF500003AE8D /* ViewController.swift in Sources */,
+				E66A19AC2D7DE6950003AE8D /* NetworkManager.swift in Sources */,
 				E66A198E2D7DDF500003AE8D /* AppDelegate.swift in Sources */,
+				E659BE3A2D7E5626007232A2 /* Extensions.swift in Sources */,
 				E66A19902D7DDF500003AE8D /* SceneDelegate.swift in Sources */,
+				E66A19B52D7DE8AE0003AE8D /* ProfileViewModel.swift in Sources */,
+				E66A19B72D7DE91D0003AE8D /* ProfileModel.swift in Sources */,
+				E659BE362D7E49E3007232A2 /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +479,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E66A19A42D7DE4470003AE8D /* XCRemoteSwiftPackageReference "Moya" */ = {
+		E659BE312D7DF335007232A2 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
@@ -403,6 +498,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E659BE322D7DF359007232A2 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E659BE312D7DF335007232A2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
 		E66A19A62D7DE5080003AE8D /* CombineCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E66A19A52D7DE5080003AE8D /* XCRemoteSwiftPackageReference "CombineCocoa" */;
