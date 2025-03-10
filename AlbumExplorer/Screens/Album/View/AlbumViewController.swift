@@ -42,6 +42,7 @@ class AlbumViewController: UIViewController, UICollectionViewDelegate {
         collectionView.registerNib(PhotoCell.self)
         collectionView.collectionViewLayout = createCompositionalLayout()
         searchBar.delegate = self
+        searchBar.placeholder = "Search in images.."
     }
     private func bindViewModel() {
         viewModel.$filteredPhotos

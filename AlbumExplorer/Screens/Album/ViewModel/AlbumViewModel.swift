@@ -16,15 +16,6 @@ class AlbumViewModel {
 
     private var cancellables = Set<AnyCancellable>()
 
-//    func fetchPhotos(albumId: Int) {
-//        apiProvider.fetchData(.getPhotos(albumId: albumId), responseType: [Photo].self)
-//            .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] photos in
-//                self?.photos = photos
-//                self?.filteredPhotos = photos
-//                
-//            })
-//            .store(in: &cancellables)
-//    }
     func fetchPhotos(albumId: Int) {
         apiProvider.fetchData(.getPhotos(albumId: albumId), responseType: [Photo].self)
             .receive(on: DispatchQueue.main) // Ensure UI updates on the main thread

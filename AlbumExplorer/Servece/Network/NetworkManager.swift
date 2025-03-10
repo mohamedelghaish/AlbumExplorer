@@ -60,7 +60,6 @@ extension MoyaProvider {
                     do {
                         let decodedData = try JSONDecoder().decode(T.self, from: response.data)
                         promise(.success(decodedData))
-                        //print(decodedData)
                     } catch {
                         promise(.failure(error))
                     }

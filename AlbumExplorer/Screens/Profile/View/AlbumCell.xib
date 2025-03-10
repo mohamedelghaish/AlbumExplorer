@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,27 +16,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WQ-Q1-53Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="J9Y-d9-zHs"/>
-                        </constraints>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYI-CZ-UXJ">
-                        <rect key="frame" x="5" y="6" width="310" height="33"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYI-CZ-UXJ">
+                        <rect key="frame" x="5" y="15" width="310" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="9WQ-Q1-53Z" secondAttribute="trailing" id="1h0-b6-73P"/>
-                    <constraint firstItem="YYI-CZ-UXJ" firstAttribute="top" secondItem="9WQ-Q1-53Z" secondAttribute="bottom" constant="5" id="CCe-Vd-fca"/>
-                    <constraint firstAttribute="bottom" secondItem="YYI-CZ-UXJ" secondAttribute="bottom" constant="5" id="L4m-ie-EMr"/>
+                    <constraint firstItem="YYI-CZ-UXJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ksf-da-cWI"/>
+                    <constraint firstAttribute="bottom" secondItem="YYI-CZ-UXJ" secondAttribute="bottom" constant="15" id="L4m-ie-EMr"/>
                     <constraint firstItem="YYI-CZ-UXJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="SlI-Zq-7xQ"/>
-                    <constraint firstItem="9WQ-Q1-53Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TSY-VI-SqV"/>
-                    <constraint firstItem="9WQ-Q1-53Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gZh-Q9-Xxg"/>
                     <constraint firstAttribute="trailing" secondItem="YYI-CZ-UXJ" secondAttribute="trailing" constant="5" id="zzq-l8-oCr"/>
                 </constraints>
             </tableViewCellContentView>
@@ -48,9 +37,4 @@
             <point key="canvasLocation" x="37" y="21"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

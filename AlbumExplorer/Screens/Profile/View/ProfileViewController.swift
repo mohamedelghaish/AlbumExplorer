@@ -33,7 +33,7 @@ class ProfileViewController: UIViewController {
         viewModel.$user
             .sink { [weak self] user in
                 self?.userName.text = user.map { "\($0.name)"}
-                self?.userAddress.text = user.map {"\($0.address.city)"}
+                self?.userAddress.text = user.map {"\($0.address.street), \($0.address.suite),\($0.address.city),\($0.address.zipcode)"}
                 if let userId = user?.id {
                     self?.viewModel.fetchAlbums(userId: userId)
                 }
