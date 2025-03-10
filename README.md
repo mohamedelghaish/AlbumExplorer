@@ -1,10 +1,10 @@
-**Album Viewer iOS App**
+#Album Viewer iOS App
 
-**📌 Overview**
+#📌 Overview
 
 This is an iOS application that displays user albums and photos fetched from the JSONPlaceholder API. Users can navigate to an album, view photos in a collection view, search for specific images, and open them in a zoomable image viewer with sharing functionality.
 
-**🎯 Features**
+#🎯 Features
 
 Fetch and display users and albums.
 
@@ -16,7 +16,7 @@ Implement search functionality for filtering photos.
 
 Open images in a full-screen viewer with zooming and sharing options.
 
-🛠️ Tech Stack
+#🛠️ Tech Stack
 
 Language: Swift
 
@@ -26,7 +26,7 @@ Networking: Moya, Combine
 
 UI Components: UIKit, Kingfisher
 
-**🚀 Getting Started**
+#🚀 Getting Started
 
 Prerequisites
 
