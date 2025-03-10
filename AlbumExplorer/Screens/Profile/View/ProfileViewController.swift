@@ -42,7 +42,6 @@ class ProfileViewController: UIViewController {
         
         viewModel.$albums
                     .sink { [weak self] albums in
-                        print("Fetched Albums: \(albums)")
                         DispatchQueue.main.async {
                             self?.albumTabelView.reloadData()
                         }
@@ -61,4 +60,10 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         cell.albumName?.text = viewModel.albums[indexPath.row].title
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let album = viewModel.albums[indexPath.row]
+        let albumVC = AlbumViewController(albumId: album.id, albumTitle: album.title)
+        navigationController?.pushViewController(albumVC, animated: true)
+    }
+
 }

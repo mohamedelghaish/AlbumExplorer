@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61070A62D7F2ADD004ECE45 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61070A52D7F2ADD004ECE45 /* AlbumViewModel.swift */; };
+		E61070A82D7F2AF4004ECE45 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61070A72D7F2AF4004ECE45 /* AlbumModel.swift */; };
+		E61070AB2D7F2B38004ECE45 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61070AA2D7F2B38004ECE45 /* AlbumViewController.xib */; };
+		E61070AC2D7F2B38004ECE45 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61070A92D7F2B38004ECE45 /* AlbumViewController.swift */; };
+		E61070AF2D7F2BC9004ECE45 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61070AE2D7F2BC9004ECE45 /* PhotoCell.xib */; };
+		E61070B02D7F2BC9004ECE45 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61070AD2D7F2BC9004ECE45 /* PhotoCell.swift */; };
+		E61070B32D7F2F66004ECE45 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E61070B22D7F2F66004ECE45 /* Kingfisher */; };
 		E659BE332D7DF359007232A2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E659BE322D7DF359007232A2 /* Moya */; };
 		E659BE362D7E49E3007232A2 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E659BE342D7E49E3007232A2 /* AlbumCell.swift */; };
 		E659BE372D7E49E3007232A2 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E659BE352D7E49E3007232A2 /* AlbumCell.xib */; };
@@ -26,6 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E61070A52D7F2ADD004ECE45 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		E61070A72D7F2AF4004ECE45 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		E61070A92D7F2B38004ECE45 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		E61070AA2D7F2B38004ECE45 /* AlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
+		E61070AD2D7F2BC9004ECE45 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		E61070AE2D7F2BC9004ECE45 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		E659BE342D7E49E3007232A2 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		E659BE352D7E49E3007232A2 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
 		E659BE392D7E5625007232A2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -49,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61070B32D7F2F66004ECE45 /* Kingfisher in Frameworks */,
 				E659BE332D7DF359007232A2 /* Moya in Frameworks */,
 				E66A19A72D7DE5080003AE8D /* CombineCocoa in Frameworks */,
 			);
@@ -57,6 +71,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E61070A12D7F2929004ECE45 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				E61070A42D7F2AC4004ECE45 /* ViewModel */,
+				E61070A32D7F2ABC004ECE45 /* View */,
+				E61070A22D7F2AB4004ECE45 /* Model */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		E61070A22D7F2AB4004ECE45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E61070A72D7F2AF4004ECE45 /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E61070A32D7F2ABC004ECE45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E61070A92D7F2B38004ECE45 /* AlbumViewController.swift */,
+				E61070AA2D7F2B38004ECE45 /* AlbumViewController.xib */,
+				E61070AD2D7F2BC9004ECE45 /* PhotoCell.swift */,
+				E61070AE2D7F2BC9004ECE45 /* PhotoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E61070A42D7F2AC4004ECE45 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E61070A52D7F2ADD004ECE45 /* AlbumViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E659BE382D7E560D007232A2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +176,7 @@
 		E66A19AD2D7DE7CA0003AE8D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E61070A12D7F2929004ECE45 /* Album */,
 				E66A19AE2D7DE7D80003AE8D /* Profile */,
 			);
 			path = Screens;
@@ -186,6 +238,7 @@
 			packageProductDependencies = (
 				E66A19A62D7DE5080003AE8D /* CombineCocoa */,
 				E659BE322D7DF359007232A2 /* Moya */,
+				E61070B22D7F2F66004ECE45 /* Kingfisher */,
 			);
 			productName = AlbumExplorer;
 			productReference = E66A198A2D7DDF500003AE8D /* AlbumExplorer.app */;
@@ -218,6 +271,7 @@
 			packageReferences = (
 				E66A19A52D7DE5080003AE8D /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				E659BE312D7DF335007232A2 /* XCRemoteSwiftPackageReference "Moya" */,
+				E61070B12D7F2F66004ECE45 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E66A198B2D7DDF500003AE8D /* Products */;
 			projectDirPath = "";
@@ -233,10 +287,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61070AF2D7F2BC9004ECE45 /* PhotoCell.xib in Resources */,
 				E66A199A2D7DDF530003AE8D /* Assets.xcassets in Resources */,
 				E66A199D2D7DDF530003AE8D /* Base in Resources */,
 				E66A19952D7DDF500003AE8D /* Base in Resources */,
 				E659BE372D7E49E3007232A2 /* AlbumCell.xib in Resources */,
+				E61070AB2D7F2B38004ECE45 /* AlbumViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61070B02D7F2BC9004ECE45 /* PhotoCell.swift in Sources */,
 				E66A19B32D7DE85E0003AE8D /* ProfileViewController.swift in Sources */,
+				E61070A82D7F2AF4004ECE45 /* AlbumModel.swift in Sources */,
+				E61070AC2D7F2B38004ECE45 /* AlbumViewController.swift in Sources */,
 				E66A19982D7DDF500003AE8D /* AlbumExplorer.xcdatamodeld in Sources */,
 				E66A19922D7DDF500003AE8D /* ViewController.swift in Sources */,
 				E66A19AC2D7DE6950003AE8D /* NetworkManager.swift in Sources */,
@@ -256,6 +315,7 @@
 				E66A19902D7DDF500003AE8D /* SceneDelegate.swift in Sources */,
 				E66A19B52D7DE8AE0003AE8D /* ProfileViewModel.swift in Sources */,
 				E66A19B72D7DE91D0003AE8D /* ProfileModel.swift in Sources */,
+				E61070A62D7F2ADD004ECE45 /* AlbumViewModel.swift in Sources */,
 				E659BE362D7E49E3007232A2 /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +539,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E61070B12D7F2F66004ECE45 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.0;
+			};
+		};
 		E659BE312D7DF335007232A2 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -498,6 +566,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E61070B22D7F2F66004ECE45 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E61070B12D7F2F66004ECE45 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		E659BE322D7DF359007232A2 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E659BE312D7DF335007232A2 /* XCRemoteSwiftPackageReference "Moya" */;

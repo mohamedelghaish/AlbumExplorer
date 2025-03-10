@@ -6,12 +6,21 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PhotoCell: UICollectionViewCell {
-
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 8
     }
-
+    
+    
+    func configure(with photo: Photo) {
+            let url = URL(string: photo.url)
+            imageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholder"))
+        }
 }
